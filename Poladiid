@@ -1,0 +1,14 @@
+import pyautogui
+import time
+
+mesaj = "hur onur hur biqeyret atasiz"  # Göndərmək istədiyin mesaj
+say = 100               # Neçə dəfə göndərmək istəyirsən
+
+print("5 saniyə vaxtın var WhatsApp Web-də söhbəti açmağa...")
+time.sleep(5)  # Vaxt verir sənə söhbəti açmaq üçün
+
+for i in range(say):
+    pyautogui.write(mesaj)  # Yazır
+    pyautogui.press("enter")  # Göndərir
+    time.sleep(0.1)  # 0.1 saniyə gecikmə
+/
